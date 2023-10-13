@@ -1,0 +1,115 @@
+@media screen and (min-width:1024px) and (max-width:1470px) {
+  .container {
+    max-width: 75% !important;
+  }
+}
+
+.card-faq {
+  width: 100%;
+  padding: 45px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+  background-color: var(--primary-Three);
+  border: 1px solid var(--primary-Two);
+  transition: .3s ease-in;
+  margin-bottom: 35px;
+}
+
+.card-faq:hover {
+  border: 1px solid var(--primary);
+}
+
+.number {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-Two);
+  border: 1px solid var(--primary-Two);
+  transition: .3s ease-in;
+}
+
+.card-faq:hover .number {
+  border: 1px solid var(--primary);
+
+}
+
+.number h3 {
+  font-weight: 500;
+  font-size: 29px;
+  font-family: var(--font-Two) !important;
+}
+
+.text {
+  width: 83%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center !important;
+  flex-direction: column;
+  height: 100%;
+}
+
+.text p {
+  width: 80%;
+  line-height: 25px;
+  margin-top: 15px;
+  color: #888;
+}
+
+@media (max-width:667px) {
+  .card-faq {
+    padding: 45px 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    width: 100%;
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  .text p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .text h3 {
+    text-align: center;
+    font-size: 17px;
+  }
+
+}
+
+@media screen and (min-width:667px) and (max-width:1023px) {
+  .card-faq {
+    padding: 45px 25px;
+  }
+
+  .text {
+    width: 70%;
+  }
+
+  .text p {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1470px) {
+  .card-faq {
+    padding: 45px 35px;
+  }
+
+  .text {
+    width: 75%;
+  }
+
+  .text p {
+    width: 100%;
+  }
+
+}

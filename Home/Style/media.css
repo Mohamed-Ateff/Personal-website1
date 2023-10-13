@@ -1,0 +1,350 @@
+@media (max-width: 1023px) {
+  nav .logo {
+    float: left;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 70px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+  #nav.scroll .icon-burger .line {
+    background-color: black;
+  }
+  nav .links a {
+    font-size: 20px;
+    color: black;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    margin-right: 10px;
+    display: block;
+  }
+
+  #nav.scroll .links a {
+    color: black;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+  #nav.scroll .icon-burger {
+    color: black;
+  }
+}
+
+/* done nav */
+
+/* Hero */
+
+@media (max-width: 1200px) {
+  .D-Text-Hero {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .container2 .p2 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+  }
+
+  .p3 {
+    width: 80%;
+    font-size: 18px;
+  }
+  .container2 .p2 span.typed-text {
+    font-size: 2rem;
+  }
+  .download-cv {
+    margin-top: 25px !important;
+  }
+}
+/* Hero */
+
+@media (max-width: 1000px) {
+  .gallery .image {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 800px) {
+  .gallery .image {
+    width: calc(100% / 2);
+  }
+  .wrapper nav .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .items span {
+    margin: 5px;
+  }
+}
+@media (max-width: 1200px) {
+  .gallery .image {
+    width: calc(100% / 2);
+  }
+  .wrapper nav .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .items span {
+    margin: 5px;
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper nav .items {
+    max-width: 600px;
+  }
+  nav .items span {
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    margin: 30px auto;
+  }
+  .wrapper nav .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .items span {
+    margin: 5px;
+  }
+  .gallery .image {
+    width: 100%;
+  }
+}
+
+/* ABout */
+@media (max-width: 1200px) {
+  #About {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 0px;
+  }
+
+  .D-About {
+    flex-direction: column;
+  }
+
+  .D-img-About {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .D-img-About img {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .D-text-img {
+    margin-top: 20px;
+    padding: 0px !important;
+    width: 100%;
+  }
+  .I-aM-Kerri-Deo-About {
+    width: 100%;
+  }
+  .D-text-img h3 {
+    width: 100% !important;
+  }
+}
+/* ABout */
+
+/* Services */
+
+@media (max-width: 1023px) {
+  #Services {
+    padding-bottom: 50px;
+    height: 250vh;
+  }
+
+  .D-title-Services p {
+    width: 100%;
+  }
+
+  .D-Services {
+    height: 200%;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .card-Services {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+/* Services */
+
+/* Freelance */
+@media (max-width: 1023px) {
+  #freelancer h1 {
+    text-align: center;
+  }
+}
+
+/* Freelance */
+
+/* Client */
+
+@media (max-width: 1023px) {
+  .D-text-Client p {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+/* Client */
+
+/* Portfolio */
+
+@media (max-width: 1023px) {
+  #Portfolio {
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+
+  .D-Portfolio {
+  }
+
+  .wrapper {
+
+  }
+  .D-links-Portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;     
+  }
+  .D-links-Portfolio .items{
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .D-Portfolio p {
+    width: 80%;
+  }
+}
+
+/* Portfolio */
+
+/* Blog */
+@media (max-width: 667px) {
+  #blog {
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+  #blog p {
+    width: 80%;
+  }
+
+  .D-card-blog {
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .card-blog {
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+  }
+  .card-blog .ovarly {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 667px) and (max-width: 1023px) {
+  #blog {
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+  #blog p {
+    width: 80%;
+  }
+
+  .D-card-blog {
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .card-blog {
+    margin-top: 20px;
+    width: 60%;
+    height: fit-content;
+  }
+  .card-blog .ovarly {
+    height: 200px;
+  }
+}
+
+/* Blog */
+
+/* contact */
+@media (max-width: 1023px) {
+  #contact {
+    height: fit-content;
+  }
+
+  #contact p {
+    width: 80%;
+  }
+  .D-input-contact {
+    height: 500px;
+  }
+  .D-input1 {
+    margin-bottom: 20px;
+    height: 110px;
+    flex-direction: column;
+  }
+
+  .input1 {
+    width: 100%;
+  }
+
+  .D-input-contact a {
+    padding: 15px 20px;
+    margin-left: 0%;
+  }
+
+  /* card contact  */
+
+  .cards-contact {
+    height: 500px;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .card-contact {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .swiper-container {
+    width: 100%;
+  }
+}
+
+/* contact */

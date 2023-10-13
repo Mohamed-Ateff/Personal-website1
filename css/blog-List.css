@@ -1,0 +1,264 @@
+/* card-blog */
+
+.card-blog {
+  background-color: var(--primary-Three);
+  margin: 50px auto;
+  width: 65%;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s ease;
+  flex-flow: wrap row !important;
+  background-image: url(../img/bg-paterns.png);
+  background-size: cover  ;
+}
+
+.card-blog:hover {
+  transform: translatey(-5px);
+}
+
+.D-img {
+  overflow: hidden;
+  width: 30%;
+  background-color: var(--primary);
+  height: 100%;
+}
+
+.D-img img {
+  width: 100%;
+  opacity: 1;
+  transition: .4s ease;
+  height: 105% !important;
+  transform: scale(1.01);
+}
+
+.card-blog:hover .D-img img {
+  opacity: .5;
+  transform: scale(1.1);
+
+}
+
+@media (max-width:667px) {
+  .D-img {
+    overflow: hidden;
+    width: 30%;
+    background-color: var(--primary);
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .D-img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .card-blog {
+    background-color: var(--primary-Three);
+    margin: 50px auto 0px auto !important;
+    width: 85% !important;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s ease;
+    flex-flow: wrap row;
+  }
+
+  .D-Number {
+    display: none !important;
+  }
+
+  .D-text {
+    border-top: 3px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 25px;
+    height: fit-content;
+    width: 100% !important;
+  }
+
+  .D-text .title-card {
+    font-size: 22px !important;
+  }
+
+  .D-text .title2-card {
+    margin-top: 13px !important;
+    width: 100% !important;
+  }
+
+  .D-text p {
+    font-size: 12px !important;
+    width: 100% !important;
+    margin-top: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .READ-MORE {
+    margin-top: 15px !important;
+    color: rgb(172, 172, 172);
+    transition: .3s ease;
+  }
+
+}
+
+
+@media screen and (min-width:667px) and (max-width:1023px) {
+  .card-blog {
+    margin: 50px auto;
+    width: 85%;
+    height: 270px;
+  }
+
+  .D-img {
+    overflow: hidden;
+    width: 45% !important;
+    background-color: var(--primary);
+    height: 100%;
+  }
+
+  .D-text {
+    width: 55% !important;
+  }
+
+
+  .D-Number {
+    display: none !important;
+  }
+
+  .D-text p {
+    font-size: 12px !important;
+    width: 100% !important;
+    margin-top: 18px !important;
+    line-height: 20px !important;
+  }
+
+  .D-text .title2-card {
+    margin-top: 18px !important;
+    width: 100% !important;
+  }
+
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1470px) {
+  .card-blog {
+    margin: 50px auto;
+    width: 80%;
+    height: 270px;
+  }
+
+  .D-img {
+    overflow: hidden;
+    width: 40% !important;
+    background-color: var(--primary);
+    height: 100%;
+  }
+
+  .D-text {
+    width: 60% !important;
+  }
+
+  .D-Number {
+    display: none !important;
+  }
+}
+
+
+
+/* End Img */
+
+.D-Number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 14%;
+  padding-left: 5px;
+  height: 44%;
+  border-right: 1px solid rgb(63, 63, 63);
+}
+
+.D-Number h1 {
+  margin: 0px;
+  font-size: 65px;
+  font-weight: 500;
+  color: rgb(146, 146, 146);
+  transition: .3s ease;
+}
+
+
+.D-Number p {
+  color: rgb(95, 95, 95);
+  font-family: var(--font-Two);
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-top: 5px;
+  transition: .3s ease;
+}
+
+/* End Number */
+
+.D-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  width: 55%;
+  height: 100%;
+}
+
+
+.D-text .title-card {
+  font-size: 24px;
+  color: rgb(216, 216, 216);
+  font-family: var(--font-one);
+  transition: .3s ease;
+}
+
+.D-text .title2-card {
+  display: block;
+  margin-top: 20px;
+  font-family: var(--font-Two);
+  color: var(--primary);
+  font-weight: bold;
+  width: 30%;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  transition: .3s ease;
+}
+
+
+.fa-user {
+  color: var(--primary);
+  margin-right: 10px;
+  font-size: 14.5px;
+}
+
+.D-text p {
+  font-size: 13px;
+  width: 98%;
+  margin-top: 20px;
+  font-family: var(--font-Two);
+  color: rgb(150, 150, 150);
+  line-height: 25px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.READ-MORE {
+  font-family: var(--font-Two);
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  color: rgb(172, 172, 172);
+  transition: .3s ease;
+}
+
+.READ-MORE:hover {
+  color: var(--primary);
+}
+
+/* E card-blog */

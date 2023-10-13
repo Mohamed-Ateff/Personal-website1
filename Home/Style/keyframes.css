@@ -1,0 +1,38 @@
+
+/* TExt Hero */
+
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/* TExt Hero */
+/* Button Bottom */
+
+
+@keyframes button_Down {
+  from{
+    opacity: 1;
+    top: 13px;
+  }
+  to{
+    opacity: 0;
+    top: 30px;
+  }
+}
+
+/* Button Bottom */
+
+
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
